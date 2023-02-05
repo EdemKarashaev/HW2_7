@@ -21,7 +21,7 @@ public class Main {
         //перебираем символ и добавляем их как ключ в Map
         for (i = 0; i < textChar.length; i++) {
             char b = textChar[i];
-            if ((textChar[i] >= 'a' && textChar[i] < 'z')) {
+            if ((Character.isLetter(b))) {
                 if (findT.containsKey(textChar[i])) {
                     findT.put(textChar[i], findT.get(textChar[i]) + 1);
                 } else {
